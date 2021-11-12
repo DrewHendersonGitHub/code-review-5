@@ -16,4 +16,9 @@ describe('Calculator', () => {
     let newCalculator = new Calculator(33);
     expect(newCalculator.mercuryYears).toEqual(20.46);
   });
+  
+  test('should return the age converted to Mars years', () => {
+    let newCalculator = new Calculator(33);
+    expect(newCalculator.mercuryYears).toEqual(62.04);
+  });
 });
