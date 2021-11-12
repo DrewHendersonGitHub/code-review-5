@@ -9,16 +9,21 @@ describe('Calculator', () => {
   
   test('should return the age converted to Mercury years', () => {
     let newCalculator = new Calculator(33);
-    expect(newCalculator.mercuryYears).toEqual(7.92);
+    expect(newCalculator.mercuryYears).toEqual(137);
   });
   
   test('should return the age converted to Venus years', () => {
     let newCalculator = new Calculator(33);
-    expect(newCalculator.venusYears).toEqual(20.46);
+    expect(newCalculator.venusYears).toEqual(53);
   });
   
   test('should return the age converted to Mars years', () => {
     let newCalculator = new Calculator(33);
-    expect(newCalculator.marsYears).toEqual(62.04);
+    expect(newCalculator.marsYears).toEqual(17);
+  });
+  
+  test('should return the age converted to Mars years', () => {
+    let newCalculator = new Calculator(33);
+    expect(newCalculator.jupiterYears).toEqual(2);
   });
 });
