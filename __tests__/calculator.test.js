@@ -22,13 +22,14 @@ describe('Calculator', () => {
     expect(newCalculator.marsYears).toEqual(17);
   });
   
-  test('should return the age converted to Mars years', () => {
+  test('should return the age converted to Jupiter years', () => {
     let newCalculator = new Calculator(33);
     expect(newCalculator.jupiterYears).toEqual(2);
   });
   
   test('should calculate a life expectancy', () => {
     let newCalculator = new Calculator(33);
-    expect(newCalculator.lifeExpectancy).toEqual(80);
+    newCalculator.calculateLifeExpectancy(3, 0, 72, 150);
+    expect(newCalculator.lifeExpectancy).toEqual(81);
   });
 });
