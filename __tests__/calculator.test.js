@@ -42,4 +42,14 @@ describe('Calculator', () => {
     expect(newCalculator.yearsRemaining(3)).toEqual(25);
     expect(newCalculator.yearsRemaining(4)).toEqual(4);
   });
+  
+  test('should return how many years have passed if older than life expectancy', () => {
+    let newCalculator = new Calculator(133);
+    newCalculator.calculateLifeExpectancy(3, 0, 72, 150);
+    expect(newCalculator.yearsRemaining(0)).toEqual(52);
+    expect(newCalculator.yearsRemaining(1)).toEqual(217);
+    expect(newCalculator.yearsRemaining(2)).toEqual(84);
+    expect(newCalculator.yearsRemaining(3)).toEqual(28);
+    expect(newCalculator.yearsRemaining(4)).toEqual(5);
+  });
 });
