@@ -6,4 +6,9 @@ describe('Calculator', () => {
     let newCalculator = new Calculator(33);
     expect(newCalculator.earthYears).toEqual(33);
   });
+  
+  test('should return the age converted to Mercury years', () => {
+    let newCalculator = new Calculator(33);
+    expect(newCalculator.mercuryYears).toEqual(7.92);
+  });
 });
