@@ -26,4 +26,9 @@ describe('Calculator', () => {
     let newCalculator = new Calculator(33);
     expect(newCalculator.jupiterYears).toEqual(2);
   });
+  
+  test('should calculate a life expectancy', () => {
+    let newCalculator = new Calculator(33);
+    expect(newCalculator.lifeExpectancy).toEqual(80);
+  });
 });
