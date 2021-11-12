@@ -25,19 +25,19 @@ export class Calculator {
   
   yearsRemaining(planet) {
     if (planet === 0) {
-      return this.lifeExpectancy - this.earthYears;
+      return Math.abs(this.lifeExpectancy - this.earthYears);
     }
     else if (planet === 1) {
-      return this.mercuryYears(this.lifeExpectancy - this.earthYears);
+      return Math.abs(this.mercuryYears(this.lifeExpectancy - this.earthYears));
     }
     else if (planet === 2) {
-      return this.venusYears(this.lifeExpectancy - this.earthYears);
+      return Math.abs(this.venusYears(this.lifeExpectancy - this.earthYears));
     }
     else if (planet === 3) {
-      return this.marsYears(this.lifeExpectancy - this.earthYears);
+      return Math.abs(this.marsYears(this.lifeExpectancy - this.earthYears));
     }
     else {
-      return this.jupiterYears(this.lifeExpectancy - this.earthYears);
+      return Math.abs(this.jupiterYears(this.lifeExpectancy - this.earthYears));
     }
   }
 }
