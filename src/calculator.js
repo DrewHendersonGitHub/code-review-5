@@ -1,10 +1,22 @@
 export class Calculator {
   constructor(age) {
     this.earthYears = age;
-    this.mercuryYears = Math.floor(this.earthYears / 0.24);
-    this.venusYears = Math.floor(this.earthYears / 0.62);
-    this.marsYears = Math.floor(this.earthYears / 1.88);
-    this.jupiterYears = Math.floor(this.earthYears / 11.86);
+  }
+  
+  mercuryYears(earthYears) {
+    return Math.floor(earthYears / 0.24);
+  }
+  
+  venusYears(earthYears) {
+    return Math.floor(earthYears / 0.62);
+  }
+  
+  marsYears(earthYears) {
+    return Math.floor(earthYears / 1.88);
+  }
+  
+  jupiterYears(earthYears) {
+    return Math.floor(earthYears / 11.86);
   }
   
   calculateLifeExpectancy(daysOfExercisePerWeek, isSmoker, heightInches, weightPounds) {
