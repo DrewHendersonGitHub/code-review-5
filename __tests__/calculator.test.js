@@ -14,11 +14,11 @@ describe('Calculator', () => {
   
   test('should return the age converted to Venus years', () => {
     let newCalculator = new Calculator(33);
-    expect(newCalculator.mercuryYears).toEqual(20.46);
+    expect(newCalculator.venusYears).toEqual(20.46);
   });
   
   test('should return the age converted to Mars years', () => {
     let newCalculator = new Calculator(33);
-    expect(newCalculator.mercuryYears).toEqual(62.04);
+    expect(newCalculator.marsYears).toEqual(62.04);
   });
 });
