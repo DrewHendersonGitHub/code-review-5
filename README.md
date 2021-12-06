@@ -6,7 +6,8 @@
 
 ## Technologies Used
 
-* _Javascript_
+* _JavaScript_
+* _Webpack_
 * _Babel_
 * _eslint_
 * _Jest_
@@ -17,9 +18,9 @@ _This program converts an age into how many years on a different planet. It also
 
 ## Setup/Installation Requirements
 
-* _In the repository, click the green code button and select download ZIP_
-* _Unzip the files into desired directory_
-* _Open the index.html inside an internet browser_
+* _clone files into a new directory using `git clone https://github.com/DrewHendersonGitHub/code-review-5`_
+* _run `npm install` then `npm run build` in the top level of the project to bundle the program_
+* _then run `npm run test` to see the results of the test_
 
 ## Known Bugs
 
