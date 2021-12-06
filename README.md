@@ -20,7 +20,7 @@ _This program converts an age into how many years on a different planet. It also
 
 * _clone files into a new directory using `git clone https://github.com/DrewHendersonGitHub/code-review-5`_
 * _run `npm install` then `npm run build` in the top level of the project to bundle the program_
-* _then run `npm run test` to see the results of the test_
+* _then run `npm run test` to see the result of the tests_
 
 ## Known Bugs
 
